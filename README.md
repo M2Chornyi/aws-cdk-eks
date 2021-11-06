@@ -1,18 +1,8 @@
-# Welcome to your CDK TypeScript project!
-
-This is a blank project for TypeScript development with CDK.
-
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
-
-## Useful commands
-
- * `npm run build`   compile typescript to js
- * `npm run watch`   watch for changes and compile
- * `npm run test`    perform the jest unit tests
- * `cdk deploy`      deploy this stack to your default AWS account/region
- * `cdk diff`        compare deployed stack with current state
- * `cdk synth`       emits the synthesized CloudFormation template
-
-## Create cluster
- * `cdk deploy EksStack --require-approval=never` 
- * `aws eks update-kubeconfig --name dev-cluster`
+# This is a quick setup exercise for CKD and EKS
+### Objectives:
+1. Using AWS CDK (TypeScript) to deploy an EKS cluster in AWS
+2. Deploy an application into the EKS cluster; this part doesn't have to be using CDK(even it's preferred), other method (kubectl, helm etc.) is also fine
+### Tasks: 
+1. Execute CDK code to spin up the EKS cluster
+2. Deploy the application into EKS cluster
+3. Destroy the configurations.
