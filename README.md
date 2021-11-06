@@ -1,4 +1,4 @@
-# This is a quick setup exercise for CKD and EKS
+# This is a quick setup exercise for AWS CKD and EKS
 ### Objectives:
 1. Using AWS CDK (TypeScript) to deploy an EKS cluster in AWS
 2. Deploy an application into the EKS cluster; this part doesn't have to be using CDK(even it's preferred), other method (kubectl, helm etc.) is also fine
