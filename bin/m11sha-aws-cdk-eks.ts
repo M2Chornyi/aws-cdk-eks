@@ -8,4 +8,7 @@ import { HelmStack } from '../lib/helm-stack';
 const app = new cdk.App();
 const eksStack = new EksStack(app, 'EksCluster-1', {});
 const k8sStack = new K8sStack(app,'K8sStack',{});
-const helmStack = new K8sStack(app,'HelmStack',{});
+const helmStack = new HelmStack(app,'HelmStack',{});
+
+k8sStack.addDependency(eksStack);
+helmStack.addDependency(eksStack);
